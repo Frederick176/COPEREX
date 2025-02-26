@@ -1,0 +1,37 @@
+{
+  "name": "coperex",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Frederick176/COPEREX.git"
+  },
+  "keywords": [],
+  "author": "Fredy Hernández",
+  "license": "ISC",
+  "type": "module",
+  "description": "API para la gestion de empresas relacionadas con la empresa COPEREX",
+  "bugs": {
+    "url": "https://github.com/Frederick176/COPEREX/issues"
+  },
+  "homepage": "https://github.com/Frederick176/COPEREX#readme",
+  "dependencies": {
+    "argon2": "^0.41.1",
+    "coperex": "file:",
+    "cors": "^2.8.5",
+    "date-fns": "^4.1.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "express-validator": "^7.2.1",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.10.2",
+    "morgan": "^1.10.0"
+  }
+}

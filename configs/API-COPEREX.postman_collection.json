@@ -1,0 +1,33 @@
+{
+	"info": {
+		"_postman_id": "c8663d0c-2beb-4c52-833f-068af6e0da39",
+		"name": "API-COPEREX",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "37606339"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"fredy32@corporex.com\",\r\n    \"password\": \"Hola320!!\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:3000/COPEREX/v1/auth/login"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
