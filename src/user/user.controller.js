@@ -13,9 +13,8 @@ export const initializeAdminUser = async () => {
                 name: "Fredy",
                 surname: "Hernàndez",
                 username: "admin_role",
-                email: "fredy32@corporex.com",
+                email: "fredyhernandez32@gmail.com",
                 password: hashedPassword,
-                phone: "21326554",
                 role: "ADMIN_ROLE",
             });
 
