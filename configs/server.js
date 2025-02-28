@@ -5,9 +5,10 @@ import cors from "cors"
 import helmet from "helmet"
 import morgan from "morgan"
 import { dbConnection } from "./mongo.js"
+import { initializeAdminUser } from "../src/user/user.controller.js"
 import apiLimiter from "../src/middlewares/rate-limit-validator.js"
 import authRoutes from "../src/auth/auth.routes.js"
-import { initializeAdminUser } from "../src/user/user.controller.js"
+import companyRoutes from "../src/company/company.routes.js"
 
 const middlewares = (app) => {
     app.use(express.urlencoded({extended: false}))
@@ -20,6 +21,7 @@ const middlewares = (app) => {
 
 const routes = (app) => {
     app.use("/COPEREX/v1/auth", authRoutes)
+    app.use("/COPEREX/v1/company", companyRoutes)
 }
 
 const conectarDB = async () => {
