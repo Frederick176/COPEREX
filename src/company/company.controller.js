@@ -52,7 +52,7 @@ export const getCompany = async (req, res) => {
     }
 }
 
-export const getCompanyList = async (rea, res) => {
+export const getCompanyList = async (req, res) => {
     try{
         const { limit = 10, from = 0 } = req.query;
         const { listarOrden } = req.body;
