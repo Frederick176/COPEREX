@@ -1,6 +1,8 @@
 "use strict"
 
 import Company from "../company/company.model.js"
+import { generateExcel} from "../reports/reportsExcel.js"
+import path from "path"
 
 export const saveCompany = async (req, res) => {
     try{
@@ -38,10 +40,13 @@ export const getCompany = async (req, res) => {
                    .limit(Number(limite))
         ])
 
+        const filePath = await generateExcel(company)
+
         return res.status(200).json({
             success: true,
             total,
-            company
+            company,
+            filePath: `/reportsExcel/${path.basename(filePath)}`
         })
     }catch(err){
         return res.status(500).json({

@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "c8663d0c-2beb-4c52-833f-068af6e0da39",
+		"_postman_id": "2e3aeff8-cb31-49b8-930a-8d9b854d5546",
 		"name": "API-COPEREX",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
 		"_exporter_id": "37606339"
@@ -16,7 +16,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"email\": \"fredy32@corporex.com\",\r\n    \"password\": \"Hola320!!\"\r\n}",
+							"raw": "{\r\n    \"email\": \"fredyhernandez32@gmail.com\",\r\n    \"password\": \"ADMINCORPOREX$sin\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -24,6 +24,65 @@
 							}
 						},
 						"url": "http://127.0.0.1:3000/COPEREX/v1/auth/login"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Companies",
+			"item": [
+				{
+					"name": "Register Companies",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2MyMDdlMjMwNjkyOTM2MzAyYWQzOWYiLCJpYXQiOjE3NDA3NzY5ODUsImV4cCI6MTc0MDc4MDU4NX0.2hfiDgA4bBt284RPFL5w98rFdwCarUywTatxXxprQOc"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"companyName\": \"TravelEase\",\r\n    \"impactLevel\": \"Medio\",\r\n    \"yearsOfExperience\": \"6 años\",\r\n    \"companyCategory\": \"Turismo y transporte\",\r\n    \"companyDescription\": \"Agencia de viajes especializada en experiencias personalizadas y sustentables. Conectan a los viajeros con destinos ecológicos y culturas locales para fomentar el turismo responsable.\",\r\n    \"companyPhone\": \"62487591\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:3000/COPEREX/v1/company/addCompany"
+					},
+					"response": []
+				},
+				{
+					"name": "List Companies",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"listarOrden\": \"A-Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:3000/COPEREX/v1/company/list"
+					},
+					"response": []
+				},
+				{
+					"name": "List Excel",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:3000/COPEREX/v1/company/reportsExcel/"
 					},
 					"response": []
 				}
