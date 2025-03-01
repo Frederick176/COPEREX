@@ -1,0 +1,17 @@
+[{
+  "_id": {
+    "$oid": "67c207e230692936302ad39f"
+  },
+  "name": "Fredy",
+  "surname": "Hernàndez",
+  "username": "admin_role",
+  "email": "fredyhernandez32@gmail.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$XrT5M/yHjU+tZQh5A9fOpw$BHemOa+l6nSmIVuRLGzfxmfC924A+eedFguRovjrdNo",
+  "role": "ADMIN_ROLE",
+  "createdAt": {
+    "$date": "2025-02-28T19:00:50.828Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-28T19:00:50.828Z"
+  }
+}]

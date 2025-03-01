@@ -1,0 +1,48 @@
+[{
+  "_id": {
+    "$oid": "67c225a8a627e689a09a910f"
+  },
+  "companyName": "EcoTech Solutions",
+  "impactLevel": "5 Estrellas",
+  "yearsOfExperience": "12 años de experiencia laboral",
+  "companyCategory": " Tecnología sostenible",
+  "companyDescription": "Empresa enfocada en el desarrollo de soluciones tecnológicas para reducir la huella de carbono",
+  "companyPhone": "58304699",
+  "status": true
+},
+{
+  "_id": {
+    "$oid": "67c227abb9f072321f6eda72"
+  },
+  "companyName": "NutriVida",
+  "impactLevel": "4 Estrellas",
+  "yearsOfExperience": "8 años",
+  "companyCategory": "Alimentación y salud",
+  "companyDescription": "Startup dedicada a la producción de alimentos funcionales y suplementos nutricionales de origen natural",
+  "companyPhone": "23894520",
+  "status": true
+},
+{
+  "_id": {
+    "$oid": "67c2281fb9f072321f6eda75"
+  },
+  "companyName": "BuildSmart",
+  "impactLevel": "4 Estrellas",
+  "yearsOfExperience": "15 años",
+  "companyCategory": "Construcción y urbanismo",
+  "companyDescription": "Empresa de construcción especializada en edificaciones ecológicas y ciudades inteligentes. Implementan tecnologías de eficiencia energética y materiales sostenibles para reducir el impacto ambiental",
+  "companyPhone": "20316578",
+  "status": true
+},
+{
+  "_id": {
+    "$oid": "67c22894b9f072321f6eda78"
+  },
+  "companyName": "TravelEase",
+  "impactLevel": "Medio",
+  "yearsOfExperience": "6 años",
+  "companyCategory": "Turismo y transporte",
+  "companyDescription": "Agencia de viajes especializada en experiencias personalizadas y sustentables. Conectan a los viajeros con destinos ecológicos y culturas locales para fomentar el turismo responsable.",
+  "companyPhone": "62487591",
+  "status": true
+}]
